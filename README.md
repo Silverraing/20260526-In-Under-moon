@@ -14,6 +14,9 @@
 感叹号加中括号括描述加小括号括图片链接
 应用单引号来扩行内代码，直接用语言加书名号br括的内容来表示代码块
 
+这里做一下豆姐的纠正，
+扩行内代码应该用单个反引号包裹，多行代码块用三个反引号包裹
+
 那下面就简单使用一下来做5月26日的学习
 
 ## 关于OPENCV
@@ -36,8 +39,8 @@ img = cv2.imread('cat.jpg')
 ```
 *豆姐在这段代码的解释中给了三个错误，我认为最重要的是这个：
 在OpenCV中我导入plt，但它读取的图像是BGR格式，而plt显示用的是RGB格式，
-如果直接plt.imshow(img)，图片颜色会错乱即蓝红互换
-豆姐在这里教了一条颜色转换通道'img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)'
-其要求使用cv2.COLOR_BGR2RGB来实现*
+如果直接`plt.imshow(img)`，图片颜色会错乱即蓝红互换
+豆姐在这里教了一条颜色转换通道`img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)`
+其要求使用`cv2.COLOR_BGR2RGB来实现`*
 
 
