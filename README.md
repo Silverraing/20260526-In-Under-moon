@@ -27,12 +27,12 @@
 cv.IMREAD_COLOR:彩色图像
 cv.IMREAD_GRAYSCALE:灰度图像
 
-python<br>
-import cv2
-import matplotlib.pyplot as plt
-import numpy as np
-img=cv2.imread('cat.jpg')
-<br>
+python
+<br>import cv2<br>
+<br>import matplotlib.pyplot as plt<br>
+<br>import numpy as np<br>
+<br>img=cv2.imread('cat.jpg')<br>
+
 
 
 
