@@ -24,8 +24,8 @@
 
 我们学一下数据读取
 
-cv.IMREAD_COLOR:彩色图像
-cv.IMREAD_GRAYSCALE:灰度图像
+彩色图像:cv.IMREAD_COLOR
+灰度图像:cv.IMREAD_GRAYSCALE
 
 ```python
 import cv2
@@ -33,7 +33,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 img = cv2.imread('cat.jpg')
-
-
+```
+*豆姐在这段代码的解释中给了三个错误，我认为最重要的是这个：
+在OpenCV中我导入plt，但它读取的图像是BGR格式，而plt显示用的是RGB格式，
+如果直接plt.imshow(img)，图片颜色会错乱即蓝红互换
+豆姐在这里教了一条颜色转换通道'img_rgb = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2RGB)'
+其要求使用cv2.COLOR_BGR2RGB来实现*
 
 
