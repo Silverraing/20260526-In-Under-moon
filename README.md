@@ -1,6 +1,8 @@
 # 20260526-In-Under-moon
 这是在映月湖所作的第一期作业
 
+# 前情提要
+
 我经常看到我的Trae进行非常大项目如音乐学习，股票预测时用到Markdown来做一个简短介绍和使用说明
 下面我也简单学习一下这个.md文件的使用
 
@@ -14,7 +16,23 @@
 
 那下面就简单使用一下来做5月26日的学习
 
+## 关于OPENCV
 
+我们看到OPENCV貌似并不是一个仅支持Python的第三方库，那我们从何学起呢，我们之前说要学图像基本操作，阈值与平滑处理，图像形态学，现在我们一步一步处理
+
+图像由像素构成，像素点是三色构成这些我们都知道
+
+我们学一下数据读取
+
+cv.IMREAD_COLOR:彩色图像
+cv.IMREAD_GRAYSCALE:灰度图像
+
+python<br>
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+img=cv2.imread('cat.jpg')
+<br>
 
 
 
